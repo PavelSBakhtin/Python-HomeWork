@@ -4,4 +4,3 @@
 n = int(input('Enter the valid number: '))
 h = ("%#x" % n)
 print(h)
-print(type(h))
