@@ -1,4 +1,5 @@
 from random import randint, shuffle
+from .check import check_positions_ent
 from .check import check_positions_rnd
 
 
@@ -19,22 +20,21 @@ if __name__ == '__main__':
     pass
 
 
-# # Этот вариант работает, но ооочень долго:
+# # Этот вариант работает, но очень долго:
 
-# from .check import check_positions_ent
 
 # def creat_positions():
 #     positions = []
-#     for _ in range(1, 9):
-#         x, y = randint(1, 8), randint(1, 8)
+#     for i in range(1, 9):
+#         x, y = i, randint(1, 8)
 #         positions.append((x, y))
 #     return positions
 
 
 # def main_rnd(n):
 #     N = 8
-#     positions = creat_positions()
 #     for _ in range(n):
+#         positions = creat_positions()
 #         while not check_positions_ent(positions, N):
 #             positions = creat_positions()
 #         print(*positions)
