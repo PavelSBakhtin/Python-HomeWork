@@ -20,7 +20,7 @@ def get_size(path):
     return result
 
 
-def directory_walker(dir_path):
+def directory_walker(dir_path): # /homework8_files
     results = []
     for root_dir, dirs, files in os.walk(dir_path):
         for item in files:
@@ -37,19 +37,16 @@ def directory_walker(dir_path):
                             'name': item,
                             'size_bytes': get_size(f_address)})
 
-    with open('homework8_total.json', 'w') as json_file:
+    with open('../homework8_report/homework8_total.json', 'w') as json_file:
         json.dump(results, json_file, indent=2)
 
-    with open('homework8_total.csv', 'w', newline='') as csv_file:
+    with open('../homework8_report/homework8_total.csv', 'w', newline='') as csv_file:
         writer = csv.DictWriter(csv_file, fieldnames=results[0].keys())
         writer.writeheader()
         writer.writerows(results)
 
-    with open('homework8_total.pickle', 'wb') as pickle_file:
+    with open('../homework8_report/homework8_total.pickle', 'wb') as pickle_file:
         pickle.dump(results, pickle_file)
-
-
-directory_walker("./homework8_files")
 
 
 if __name__ == '__main__':

@@ -27,8 +27,8 @@ def txt_to_json(file_in, file_out):
 
 
 def json_to_csv():
-    with open('homework8_files/homework8_original.json', 'r') as f1, \
-            open('homework8_files/homework8_original.csv', 'w', newline='', encoding='utf-8') as f2:
+    with open('homework8_level.json', 'r') as f1, \
+            open('homework8_level.csv', 'w', newline='', encoding='utf-8') as f2:
         data = json.load(f1)
         columns = ['level', 'pers_id', 'name']
         csv_write = csv.writer(f2, delimiter=';')
@@ -38,9 +38,6 @@ def json_to_csv():
             for i in value:
                 result.append([key, i, data[key][i]])
         csv_write.writerows(result)
-
-
-json_to_csv()
 
 
 # Чтение csv файла без использования csv.DictReader.
@@ -66,9 +63,6 @@ def csv_to_json(file_org, file_fin):
         json.dump(dict_to_save, f2, indent=2)
 
 
-csv_to_json('homework8_files/homework8_original.csv', 'homework8_files/homework8_whash.json')
-
-
 # Функция, которая в бесконечном цикле запрашивает имя,
 # личный идентификатор и уровень доступа (от 1 до 7).
 # После каждого ввода добавляет новую информацию в JSON файл.
@@ -78,7 +72,7 @@ csv_to_json('homework8_files/homework8_original.csv', 'homework8_files/homework8
 # При перезапуске функции уже записанные в файл данные сохраняться.
 
 
-def level_json():
+def level_json(file):
     while True:
         str_inp = input('Введите данные через пробел: ')
         if str_inp:
@@ -86,7 +80,7 @@ def level_json():
             if not 0 < int(level) < 8:
                 print('Неверный уровень доступа')
                 continue
-            with open('homework8_files/homework8_level.json', 'r') as f1:
+            with open(file, 'r') as f1:
                 try:
                     data = json.load(f1)
                 except:
@@ -94,13 +88,10 @@ def level_json():
             if level not in data:
                 data[level] = {}
             data[level][pers_id] = name
-            with open('homework8_files/homework8_level.json', 'w') as f2:
+            with open(file, 'w') as f2:
                 json.dump(data, f2, sort_keys=True)
         else:
             break
-
-
-level_json()
 
 
 # Функция, которая ищет json файлы в указанной директории
@@ -110,7 +101,7 @@ level_json()
 def json_to_pickle(path):
     if not os.path.exists(path):
         os.mkdir(path)
-    for file in os.listdir(path):
+    for file in os.listdir():
         if file.endswith('.json'):
             file_name, file_ext = file.rsplit('.')
             with open(file, 'r') as f1, \
@@ -119,9 +110,6 @@ def json_to_pickle(path):
     for f in os.listdir():
         if f.endswith('.pickle'):
             shutil.move(f, path)
-
-
-json_to_pickle('./homework8_files/homework8_pickle')
 
 
 # Функция, которая преобразует pickle файл, хранящий список словарей, в табличный csv файл.
@@ -140,9 +128,8 @@ def pickle_to_csv(file):
         for key, value in data.items():
             a, b = tuple(*value.values())
             writer.writerow([*(value.keys()), a, b])
-
-
-pickle_to_csv('homework8_files/homework8_whash.pickle')
+    f3 = f'{file[:-7]}.csv'
+    shutil.move(f3, path)
 
 
 # Читает csv файл с hash без использования csv.DictReader.
@@ -169,9 +156,6 @@ def csv_to_pickle(file):
     result = pickle.dumps(dict_to_print, protocol=pickle.DEFAULT_PROTOCOL)
     print(f'{result = }')
     print(type(result))
-
-
-csv_to_pickle('homework8_files/homework8_whash.csv')
 
 
 if __name__ == '__main__':

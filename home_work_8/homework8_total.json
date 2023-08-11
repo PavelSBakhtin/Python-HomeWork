@@ -1,0 +1,14 @@
+[
+  {
+    "root_directory": "./homework8_files",
+    "status": "file",
+    "name": "homework8_original.json",
+    "size_bytes": 387
+  },
+  {
+    "root_directory": "./homework8_files",
+    "status": "file",
+    "name": "homework8_original.txt",
+    "size_bytes": 206
+  }
+]

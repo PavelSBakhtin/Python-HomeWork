@@ -49,4 +49,4 @@ def directory_walker(dir_path):
         pickle.dump(results, pickle_file)
 
 
-directory_walker("../../home_work_7")
+directory_walker('../../home_work_7')
