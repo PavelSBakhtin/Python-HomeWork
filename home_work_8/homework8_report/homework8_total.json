@@ -1,0 +1,62 @@
+[
+  {
+    "root_directory": "../../home_work_8/homework8_files",
+    "status": "file",
+    "name": "homework8_hash.csv",
+    "size_bytes": 157
+  },
+  {
+    "root_directory": "../../home_work_8/homework8_files",
+    "status": "file",
+    "name": "homework8_hash.json",
+    "size_bytes": 355
+  },
+  {
+    "root_directory": "../../home_work_8/homework8_files",
+    "status": "file",
+    "name": "homework8_level.csv",
+    "size_bytes": 64
+  },
+  {
+    "root_directory": "../../home_work_8/homework8_files",
+    "status": "file",
+    "name": "homework8_level.json",
+    "size_bytes": 77
+  },
+  {
+    "root_directory": "../../home_work_8/homework8_files",
+    "status": "file",
+    "name": "homework8_original.json",
+    "size_bytes": 387
+  },
+  {
+    "root_directory": "../../home_work_8/homework8_files",
+    "status": "file",
+    "name": "homework8_original.txt",
+    "size_bytes": 206
+  },
+  {
+    "root_directory": "../../home_work_8/homework8_files",
+    "status": "folder",
+    "name": "homework8_pickle",
+    "size_bytes": 692
+  },
+  {
+    "root_directory": "../../home_work_8/homework8_files\\homework8_pickle",
+    "status": "file",
+    "name": "homework8_hash.pickle",
+    "size_bytes": 226
+  },
+  {
+    "root_directory": "../../home_work_8/homework8_files\\homework8_pickle",
+    "status": "file",
+    "name": "homework8_level.pickle",
+    "size_bytes": 86
+  },
+  {
+    "root_directory": "../../home_work_8/homework8_files\\homework8_pickle",
+    "status": "file",
+    "name": "homework8_original.pickle",
+    "size_bytes": 380
+  }
+]

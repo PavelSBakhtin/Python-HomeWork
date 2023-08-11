@@ -1,0 +1,11 @@
+root_directory,status,name,size_bytes
+../../home_work_8/homework8_files,file,homework8_hash.csv,157
+../../home_work_8/homework8_files,file,homework8_hash.json,355
+../../home_work_8/homework8_files,file,homework8_level.csv,64
+../../home_work_8/homework8_files,file,homework8_level.json,77
+../../home_work_8/homework8_files,file,homework8_original.json,387
+../../home_work_8/homework8_files,file,homework8_original.txt,206
+../../home_work_8/homework8_files,folder,homework8_pickle,692
+../../home_work_8/homework8_files\homework8_pickle,file,homework8_hash.pickle,226
+../../home_work_8/homework8_files\homework8_pickle,file,homework8_level.pickle,86
+../../home_work_8/homework8_files\homework8_pickle,file,homework8_original.pickle,380

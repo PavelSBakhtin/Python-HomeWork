@@ -20,7 +20,9 @@ def get_size(path):
     return result
 
 
-def directory_walker(dir_path): # /homework8_files
+def directory_walker(dir_path, path_to): # /homework8_files
+    if not os.path.exists(path_to):
+        os.mkdir(path_to)
     results = []
     for root_dir, dirs, files in os.walk(dir_path):
         for item in files:

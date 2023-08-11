@@ -12,7 +12,7 @@ while True:
     print('\n================== Menu ==================')
     print('1. Преобразование файлов по форматам')
     print('2. Количество папок и файлов, и их размеры')
-    print('3. Выйти')
+    print('0. Выйти')
     menu = int(input('Выберите пункт меню: '))
     if menu == 1:
         m = True
@@ -56,12 +56,14 @@ while True:
             print('0. Вернуться в основное меню')
             m2 = int(input('\nВыберите подпункт меню: '))
             if m2 == 1:
-                directory_walker(os.getcwd())
+                path = '../../home_work_8/homework8_files'
+                path_to = '../../home_work_8/homework8_report'
+                directory_walker(path, path_to)
             elif m2 == 0:
                 m = False
             else:
                 print(f'\nНеверно введена команда')
-    elif menu == 3:
+    elif menu == 0:
         exit()
     else:
         print(f'\nНеверно введена команда')
