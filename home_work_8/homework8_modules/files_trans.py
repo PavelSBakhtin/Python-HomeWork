@@ -1,6 +1,7 @@
 import json
 import csv
 import pickle
+import shutil
 import os
 
 
@@ -20,11 +21,6 @@ def txt_to_json(file_in, file_out):
             else:
                 dict_to_save[key.title()] = [value]
         json.dump(dict_to_save, f2, ensure_ascii=False, indent=2)
-
-
-file_in = 'homework8_files/homework8_original.txt'
-file_out = 'homework8_files/homework8_original.json'
-txt_to_json(file_in, file_out)
 
 
 # Функция, которая сохраняет созданный файл с данными в формате JSON в формате CSV.
@@ -112,15 +108,20 @@ level_json()
 
 
 def json_to_pickle(path):
+    if not os.path.exists(path):
+        os.mkdir(path)
     for file in os.listdir(path):
         if file.endswith('.json'):
             file_name, file_ext = file.rsplit('.')
             with open(file, 'r') as f1, \
                     open(f'{file_name}.pickle', 'wb') as f2:
                 pickle.dump(json.load(f1), f2)
+    for f in os.listdir():
+        if f.endswith('.pickle'):
+            shutil.move(f, path)
 
 
-json_to_pickle('homework8_files')
+json_to_pickle('./homework8_files/homework8_pickle')
 
 
 # Функция, которая преобразует pickle файл, хранящий список словарей, в табличный csv файл.
