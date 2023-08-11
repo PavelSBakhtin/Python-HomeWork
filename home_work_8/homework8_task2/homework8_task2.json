@@ -1,0 +1,212 @@
+[
+  {
+    "root_directory": "../../home_work_7",
+    "status": "file",
+    "name": "homework7_task1.py",
+    "size_bytes": 209
+  },
+  {
+    "root_directory": "../../home_work_7",
+    "status": "file",
+    "name": "homework7_task2.py",
+    "size_bytes": 1773
+  },
+  {
+    "root_directory": "../../home_work_7",
+    "status": "file",
+    "name": "homework7_task3.py",
+    "size_bytes": 4494
+  },
+  {
+    "root_directory": "../../home_work_7",
+    "status": "folder",
+    "name": "homework7_files",
+    "size_bytes": 17540
+  },
+  {
+    "root_directory": "../../home_work_7",
+    "status": "folder",
+    "name": "homework7_modules",
+    "size_bytes": 13552
+  },
+  {
+    "root_directory": "../../home_work_7",
+    "status": "folder",
+    "name": "homework7_task2",
+    "size_bytes": 5686
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_files",
+    "status": "folder",
+    "name": "bmp",
+    "size_bytes": 5169
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_files",
+    "status": "folder",
+    "name": "jpg",
+    "size_bytes": 6512
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_files",
+    "status": "folder",
+    "name": "png",
+    "size_bytes": 5481
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_files",
+    "status": "folder",
+    "name": "txt",
+    "size_bytes": 378
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_files\\bmp",
+    "status": "file",
+    "name": "1EzaiKfRlWvVqux.bmp",
+    "size_bytes": 3270
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_files\\bmp",
+    "status": "file",
+    "name": "2xDQaNTRYP.bmp",
+    "size_bytes": 688
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_files\\bmp",
+    "status": "file",
+    "name": "3ZPoIizRHpGcyUNFnfgMKCXOv.bmp",
+    "size_bytes": 1211
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_files\\jpg",
+    "status": "file",
+    "name": "1uhjfhoba0001.jpg",
+    "size_bytes": 1080
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_files\\jpg",
+    "status": "file",
+    "name": "1zcIbnKBTHZlXdGOmxqfYJD.jpg",
+    "size_bytes": 775
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_files\\jpg",
+    "status": "file",
+    "name": "2rqaFlnYdMDIkBQfCohZ.jpg",
+    "size_bytes": 2806
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_files\\jpg",
+    "status": "file",
+    "name": "2TsHShoba0002.jpg",
+    "size_bytes": 1851
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_files\\png",
+    "status": "file",
+    "name": "1RKakVuDAX.png",
+    "size_bytes": 1677
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_files\\png",
+    "status": "file",
+    "name": "2vFVBnxYNlPRGz.png",
+    "size_bytes": 3804
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_files\\txt",
+    "status": "file",
+    "name": "homework7_aliases.txt",
+    "size_bytes": 94
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_files\\txt",
+    "status": "file",
+    "name": "homework7_nums.txt",
+    "size_bytes": 105
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_files\\txt",
+    "status": "file",
+    "name": "homework7_nums_aliases.txt",
+    "size_bytes": 179
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_modules",
+    "status": "file",
+    "name": "create_files.py",
+    "size_bytes": 2303
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_modules",
+    "status": "file",
+    "name": "nums_aliases.py",
+    "size_bytes": 4013
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_modules",
+    "status": "file",
+    "name": "sort_group.py",
+    "size_bytes": 969
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_modules",
+    "status": "file",
+    "name": "__init__.py",
+    "size_bytes": 340
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_modules",
+    "status": "folder",
+    "name": "__pycache__",
+    "size_bytes": 5927
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_modules\\__pycache__",
+    "status": "file",
+    "name": "create_files.cpython-38.pyc",
+    "size_bytes": 1570
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_modules\\__pycache__",
+    "status": "file",
+    "name": "nums_aliases.cpython-38.pyc",
+    "size_bytes": 2825
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_modules\\__pycache__",
+    "status": "file",
+    "name": "sort_group.cpython-38.pyc",
+    "size_bytes": 980
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_modules\\__pycache__",
+    "status": "file",
+    "name": "__init__.cpython-38.pyc",
+    "size_bytes": 552
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_task2",
+    "status": "file",
+    "name": "1FiHBhoba0001.png",
+    "size_bytes": 2019
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_task2",
+    "status": "file",
+    "name": "1FiHBjAGVv.txt",
+    "size_bytes": 2019
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_task2",
+    "status": "file",
+    "name": "2dniBhoba0002.png",
+    "size_bytes": 824
+  },
+  {
+    "root_directory": "../../home_work_7\\homework7_task2",
+    "status": "file",
+    "name": "2dniBlUPj.txt",
+    "size_bytes": 824
+  }
+]
