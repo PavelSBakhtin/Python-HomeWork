@@ -20,9 +20,9 @@ def square_roots(a, b, c):
         x = (-b + D ** 0.5) / (2 * a)
         y = (-b - D ** 0.5) / (2 * a)
         if x == y:
-            return (f'Корень квадратного уравнения: {int(x)}')
+            return (f'Корень квадратного уравнения: {round(x, 2)}')
         else:
-            return (f'Корни квадратного уравнения: {int(x)}, {int(y)}')
+            return (f'Корни квадратного уравнения: {round(x, 2)}, {round(y, 2)}')
     else:
         return ('Квадратное уравнение не имеет корней')
 
@@ -58,19 +58,11 @@ def csv_to_square(func):
 
 
 def square_to_json(func):
-    with open('homework9_task2.csv', 'r', encoding='utf-8') as file:
-        reader = csv.reader(file)
-        coefs = []
-        for row in reader:
-            coefs.append(tuple(map(int, row)))
-        total = {}
     @wraps(func)
     def wrapper(*args, **kwargs):
-        for item in coefs:
-            result = func(*args, **kwargs)
-            total[str(item)] = result
-        with open('homework9_task2.json', 'a', encoding='utf-8') as f2:
-            json.dump(total, f2)
+        result = func(*args, **kwargs)
+        with open('homework9_task2.json', 'w', encoding='utf-8') as f2:
+            json.dump(result, f2, indent=0, ensure_ascii=False)
         return result
     return wrapper
 
@@ -88,7 +80,9 @@ def execution(a, b, c):
 @square_to_json
 @csv_to_square
 def all_inclusive(a, b, c):
-    square_roots(a, b, c)
+    total = {}
+    total[f'{a}, {b}, {c}'] = square_roots(a, b, c)
+    return total
 
 
 while True:
