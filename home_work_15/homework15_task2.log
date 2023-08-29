@@ -1,0 +1,7 @@
+ERROR, 2023-08-29 21:02:25,511, command line input error
+INFO, 2023-08-29 21:03:22,593, line entered: 3 4 5
+INFO, 2023-08-29 21:03:22,594, the parameters of the equation 3.0, 4.0, 5.0
+INFO, 2023-08-29 21:03:22,594, result: the equation has no real roots, equation roots None, None
+INFO, 2023-08-29 21:03:39,161, line entered: 2 3 1
+INFO, 2023-08-29 21:03:39,162, the parameters of the equation 2.0, 3.0, 1.0
+INFO, 2023-08-29 21:03:39,162, result: , equation roots -0.5, -1.0
